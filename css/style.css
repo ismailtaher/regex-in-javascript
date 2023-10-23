@@ -7,18 +7,37 @@
 html,
 body {
     width: 100%;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
     background-color: #fff;
 }
 
 main {
     height: 100vh;
+}
+form{
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.flexCenter {
+    display: flex;
+    flex: column wrap;
     justify-content: center;
     align-items: center;
 }
 
-h1 {
-    font-size: 250%;
+label {
+    font-size: 2rem;
 }
+input {
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    height: 3.5rem;
+    width: 70%;
+}
+p {
+    font-size: 2rem;
+}
+

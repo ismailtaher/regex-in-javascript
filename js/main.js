@@ -20,3 +20,15 @@ document.getElementById("phoneForm").addEventListener("submit", (event) => {
   const savedPhoneNum = input.value.replaceAll(regex, " ");
   console.log(savedPhoneNum);
 });
+
+document.getElementById("textForm").addEventListener("submit", (event) => {
+  event.preventDefault();
+  const input = document.getElementById("textEntry");
+  const regex = / {2,}/g;
+  const newText = input.value.replaceAll(regex, " ").trim();
+  console.log(newText);
+  const encodedInputText = encodeURI(input.value);
+  const encodedCleanText = encodeURI(newText);
+  console.log(encodedInputText);
+  console.log(encodedCleanText);
+});
